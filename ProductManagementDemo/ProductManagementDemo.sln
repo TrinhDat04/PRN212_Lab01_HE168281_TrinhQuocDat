@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObjects", "BusinessObjects,\BusinessObjects.csproj", "{49DCCE19-AE8B-4E22-BF7F-122BFF9DF494}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessObjects", "BusinessObjects,\BusinessObjects.csproj", "{49DCCE19-AE8B-4E22-BF7F-122BFF9DF494}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessObjects", "DataAccessObjects,\DataAccessObjects.csproj", "{0A3AAF94-CD24-4B36-89C6-C718F881B522}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessObjects", "DataAccessObjects,\DataAccessObjects.csproj", "{0A3AAF94-CD24-4B36-89C6-C718F881B522}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{1B4CEBF4-1A79-42A8-8857-09A9FBC85D23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "Repositories\Repositories.csproj", "{1B4CEBF4-1A79-42A8-8857-09A9FBC85D23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{DF526420-983B-444C-A1F0-D34638BAC4B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{DF526420-983B-444C-A1F0-D34638BAC4B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductManagement", "ProductManagement\ProductManagement.csproj", "{37332810-CCAA-43F9-A472-8EBC31E78952}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement", "ProductManagement\ProductManagement.csproj", "{37332810-CCAA-43F9-A472-8EBC31E78952}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFApp", "WPFApp\WPFApp.csproj", "{94CB6BD6-AC74-439A-807D-7F207ADDA009}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{37332810-CCAA-43F9-A472-8EBC31E78952}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37332810-CCAA-43F9-A472-8EBC31E78952}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37332810-CCAA-43F9-A472-8EBC31E78952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94CB6BD6-AC74-439A-807D-7F207ADDA009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94CB6BD6-AC74-439A-807D-7F207ADDA009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94CB6BD6-AC74-439A-807D-7F207ADDA009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94CB6BD6-AC74-439A-807D-7F207ADDA009}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

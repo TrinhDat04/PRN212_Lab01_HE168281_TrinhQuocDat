@@ -9,6 +9,10 @@ namespace BusinessObjects
 {
     public partial class Product
     {
+        public Product()
+        {
+        }
+
         public Product(int id,String name, int catId, short unitInStock, decimal price) {
             this.ProductId = id;
             this.ProductName = name;

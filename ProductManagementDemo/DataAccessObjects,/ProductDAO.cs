@@ -18,23 +18,23 @@ namespace DataAccessObjects
             Product aniseed = new Product(3, "Aniseed Syrup", 2, 23, 10);
             listProducts = new List<Product> { chai, chang, aniseed };
         }
-        public List<Product> GetProducts() => listProducts;
+        public static List<Product> GetProducts() => listProducts;
 
-        public static List<Product> GetProducts()
-        {
-            var listProducts = new List<Product>();
-            try
-            {
-                using var db = new MyStoreContext();
-                listProducts = db.Product.ToList();
-            }
-            catch (Exception e) { }
-            return listProducts;
-        }
+        // public static List<Product> GetProducts()
+        //{
+        //  var listProducts = new List<Product>();
+        // try
+        //{
+        //   using var db = new MyStoreContext();
+        // listProducts = db.Product.ToList();
+        //}
+        //catch (Exception e) { }
+        //return listProducts;
+        //}
 
         public static void SaveProduct(Product p)
         {
-            listProducts.Add(p);
+              listProducts.Add(p);
 
         }
 
@@ -75,7 +75,8 @@ namespace DataAccessObjects
                 {
                     return p;
                 }
-            }return null; 
+            }
+            return null; 
         }
     }
 }

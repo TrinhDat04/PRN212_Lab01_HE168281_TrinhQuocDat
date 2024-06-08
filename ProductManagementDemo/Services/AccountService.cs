@@ -11,6 +11,11 @@ namespace Services
     public class AccountService : IAccountService
     {
         public readonly IAccountRepository iAccoutRepository;
+
+        public AccountService()
+        {
+            iAccoutRepository = new AccountRepository();
+        }
         public AccountMember GetAccountById(string accountID) => iAccoutRepository.GetAccountById(accountID);
     }
 }

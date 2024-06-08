@@ -1,4 +1,4 @@
-﻿using BusinessObjects_;
+﻿using BusinessObjects;
 using System.Collections.Generic;
 
 namespace BusinessObjects

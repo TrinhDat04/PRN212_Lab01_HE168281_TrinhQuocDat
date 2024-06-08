@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Repositories/1.0.0": {
+        "dependencies": {
+          "BusinessObjects": "1.0.0",
+          "DataAccessObjects": "1.0.0"
+        },
+        "runtime": {
+          "Repositories.dll": {}
+        }
+      },
+      "BusinessObjects/1.0.0": {
+        "runtime": {
+          "BusinessObjects.dll": {}
+        }
+      },
+      "DataAccessObjects/1.0.0": {
+        "dependencies": {
+          "BusinessObjects": "1.0.0"
+        },
+        "runtime": {
+          "DataAccessObjects.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BusinessObjects/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataAccessObjects/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
