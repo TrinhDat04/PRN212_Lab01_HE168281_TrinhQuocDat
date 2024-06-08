@@ -12,5 +12,9 @@ namespace Repositories
     {
              public List<Category> GetCategories() => CategoryDAO.GetCategories();
 
-           }
+        public string GetCategoryByID(int id)
+        {
+           return CategoryDAO.getCategoryById(id);
+        }
+    }
 }

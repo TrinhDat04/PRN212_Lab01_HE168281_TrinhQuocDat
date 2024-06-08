@@ -9,6 +9,12 @@ namespace DataAccessObjects
 {
     public class CategoryDAO
     {
+        public static string getCategoryById(int id)
+        {
+            List<Category> listCate = GetCategories(); 
+            string name = listCate.Find(c => c.CategoryId == id).CategoryName;
+            return name;
+        }
         public static List<Category> GetCategories()
         {
             Category beverages = new Category(1, "Beverages");
@@ -30,6 +36,7 @@ namespace DataAccessObjects
                 listCategories.Add(grains);
                 listCategories.Add(meat);
                 listCategories.Add(produce);
+                listCategories.Add(seafood); 
             }
             catch (Exception e)
             {
