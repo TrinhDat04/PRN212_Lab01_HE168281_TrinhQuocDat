@@ -1,9 +1,4 @@
 ﻿using BusinessObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataAccessObjects
 {
@@ -15,30 +10,19 @@ namespace DataAccessObjects
         {
             Product chai = new Product(1, "Chai", 3, 12, 18);
             Product chang = new Product(2, "Chang", 1, 23, 19);
-            Product aniseed = new Product(3, "Aniseed Syrup", 2, 23, 10);
+            Product aniseed = new Product(3, "Aniseed syrup", 2, 23, 10);
             listProducts = new List<Product> { chai, chang, aniseed };
         }
-        public static List<Product> GetProducts() => listProducts;
+        public List<Product> GetProducts() => listProducts;
+        
 
-        // public static List<Product> GetProducts()
-        //{
-        //  var listProducts = new List<Product>();
-        // try
-        //{
-        //   using var db = new MyStoreContext();
-        // listProducts = db.Product.ToList();
-        //}
-        //catch (Exception e) { }
-        //return listProducts;
-        //}
-
-        public static void SaveProduct(Product p)
+        public  void SaveProduct(Product p)
         {
               listProducts.Add(p);
 
         }
 
-        public static void UpdateProduct(Product product)
+        public  void UpdateProduct(Product product)
         {
             foreach (Product p in listProducts.ToList())
             {
@@ -53,7 +37,7 @@ namespace DataAccessObjects
             }
         }
         
-        public static void DeleteProduct(Product product)
+        public  void DeleteProduct(Product product)
         {
             foreach (Product p in listProducts.ToList())
             {
@@ -67,7 +51,7 @@ namespace DataAccessObjects
             }
         }
 
-        public static Product GetProductByID(int id)
+        public  Product GetProductByID(int id)
         {
             foreach(Product p in listProducts.ToList())
             {

@@ -20,5 +20,9 @@ namespace Services
         {
             return iCategoryRepository.GetCategories();
         }
+        public string GetCategoryName(int id)
+        {
+            return iCategoryRepository.GetCategoryByID(id);
+        }
     }
 }

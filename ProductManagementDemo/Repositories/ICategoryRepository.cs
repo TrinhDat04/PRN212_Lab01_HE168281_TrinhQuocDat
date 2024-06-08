@@ -10,5 +10,6 @@ namespace Repositories
    public interface ICategoryRepository
     {
         List<Category> GetCategories();
+        string GetCategoryByID(int id);
     }
 }
